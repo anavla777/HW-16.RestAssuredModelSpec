@@ -1,3 +1,5 @@
+package tests;
+
 import io.restassured.RestAssured;
 import models.lombok.*;
 import org.junit.jupiter.api.DisplayName;
@@ -11,7 +13,7 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static specs.ReqresSpec.*;
 
-public class ReqresTests {
+public class ReqresTests extends TestBase {
 
     @DisplayName("Check that user data are received")
     @Tag("API")
